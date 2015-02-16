@@ -1,0 +1,22 @@
+{
+  "name": "object-by-example-form-angularjs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/davidvoler/object-by-example-form-angularjs",
+  "authors": [
+    "davidlevy <davidvoler@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.3.13",
+    "angular-route": "~1.3.13",
+    "angular-bootstrap": "~0.12.0",
+    "bootstrap": "~3.3.2"
+  }
+}

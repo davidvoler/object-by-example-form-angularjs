@@ -18,7 +18,7 @@
           console.log('we have an object type');
           element.append("<obe-object data='field.data'></obe-object>");
         } else {
-          element.append('<li><label ng-bind="field.$name"></label>' +
+          element.append('<li class="list-group-item"><label ng-bind="field.$name"></label>' +
             '<input ng-model="field.data"></li>');
         }
         $compile(element.contents())(scope);
@@ -59,8 +59,8 @@
       restrict: 'E',
       //replace: true,
       scope: {'data': '='},
-      template: '<ul> ' +
-        '<li><strong ng-bind="data.$name"></strong></li> ' +
+      template: '<ul class="list-group"> ' +
+        '<li class="list-group-item active" ng-if="data.$name"><strong  ng-bind="data.$name"></strong></li> ' +
         '<obe-field ng-repeat="item in items" field="item"></obe-field>' +
         '</ul>',
       link: function (scope, element, attr) {
