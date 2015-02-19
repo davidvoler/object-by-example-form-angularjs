@@ -3,30 +3,34 @@
  */
 (function () {
 
-  function obeDemoController() {
-    var self = this;
+    function obeDemoController() {
+        var self = this;
 
-    self.example = {weight: 5,
-      face: 'round',
-      name: 'Shira',
-      lake: {
-        surface: 4456, color: 'blue',
-        depth: {
-          max: 44,
-          average: 20
-        }
-      }
-    };
-    self.example1 = {weight: 5, face: 'round', name: 'Shira'};
-
-
-  }
-
-
-  angular.module('obe.demo', ['obe.object_by_example_form']);
+        self.example = {
+            weight: 5,
+            face: 'round',
+            name: 'Shira',
+            lake: {
+                surface: 4456, color: 'blue',
+                depth: {
+                    max: 44,
+                    average: 20
+                }
+            },
+            colors:['green','blue','yellow'],
+            cats:[{name:'mitzy',color:'blue'},
+                {name:'shunra',color:'green'}]
+        };
+        self.example1 = {weight: 5, face: 'round', name: 'Shira'};
 
 
-  angular.module('obe.demo').controller('obeDemoController', obeDemoController);
+    }
+
+
+    angular.module('obe.demo', ['obe.object_by_example_form']);
+
+
+    angular.module('obe.demo').controller('obeDemoController', obeDemoController);
 
 }());
 
